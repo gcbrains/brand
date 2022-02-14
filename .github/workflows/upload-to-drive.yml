@@ -21,6 +21,6 @@ jobs:
           node-version: 12.x
       - name: Upload files
         run: |
-          cd ./scripts
+          cd ./.scripts/
           npm install
           npm run upload
