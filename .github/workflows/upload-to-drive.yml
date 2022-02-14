@@ -1,0 +1,26 @@
+name: upload to drive
+on:
+  pull_request:
+    types: [labeled, synchronize]
+    branches:
+      - main
+  push:
+    branches:
+      - main
+
+jobs:
+  upload-to-drive:
+    if: contains( github.event.pull_request.labels.*.name, 'test-workflow')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout main
+        uses: actions/checkout@v2
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v2.1.5
+        with:
+          node-version: 12.x
+      - name: Upload files
+        run: |
+          cd ./scripts
+          npm install
+          npm run upload

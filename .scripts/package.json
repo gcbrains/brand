@@ -1,0 +1,7 @@
+{
+  "name": "branding",
+  "version": "1.0.0",
+  "scripts": {
+      "upload": "node index.js"
+  }
+}
