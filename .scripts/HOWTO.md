@@ -12,7 +12,6 @@ Use this link to select OAuth scope;
 Select these scopes;
 
 - https://www.googleapis.com/auth/drive.file
-- https://www.googleapis.com/auth/drive.metadata.readonly
 
 Enable drive api;
 
