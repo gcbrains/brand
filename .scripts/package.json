@@ -2,6 +2,10 @@
   "name": "branding",
   "version": "1.0.0",
   "scripts": {
-      "upload": "node index.js"
+    "upload": "node index.js"
+  },
+  "dependencies": {
+    "google-auth-library": "^7.12.0",
+    "googleapis": "^95.0.0"
   }
 }
