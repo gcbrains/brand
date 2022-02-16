@@ -20,7 +20,11 @@ jobs:
         with:
           node-version: 12.x
       - name: Upload files
+        env:
+          TOKEN: ${{secrets.GOOGLE_API_TOKEN}}
         run: |
           cd ./.scripts/
+          echo $TOKEN >> token.json
           npm install
           npm run upload
+          rm -df token.json
