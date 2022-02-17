@@ -17,8 +17,6 @@ What we've decided so far is;
 Thinks we still consider;
   - (oVo) might be used when logo cannot be used
 
-Usages;
-
 ## Social media profiles
 
 ![](./assets/logo/logo-circle.png)
