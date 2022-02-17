@@ -1,112 +1,54 @@
 const fs = require('fs');
 const path = require('path');
-const { google } = require('googleapis');
-const drive = google.drive("v3");
-
-google.options({
-    auth: new google.auth.GoogleAuth({
-        keyFile: './token.json',
-        scopes: ['https://www.googleapis.com/auth/drive.file']
-    })
-});
+const lib = require('./lib');
 
 async function createRemoteFolder(force = false) {
-    const remoteFolders = await drive.files.list({
-        q: "mimeType = 'application/vnd.google-apps.folder' and name = 'Branding'"
-    });
+    const remoteFolders = await lib.findRemoteFolders('Branding');
 
-    if(force && remoteFolders.data.files.length > 0) {
-        remoteFolders.data.files.forEach(async file => {
-            console.log(`force deleting remote folder: ${file.name}`);
-
-            await drive.files.delete({ fileId: file.id });
+    if(force && remoteFolders.length > 0) {
+        remoteFolders.forEach(async folder => {
+            console.log(`force delete Branding folder: ${folder.name}`);
+            await lib.deleteRemoteFile(folder.id);
         });
     }
 
     let result;
-    if(!force && remoteFolders.data.files.length >= 0) {
-        console.log('remote folder already exists!');
-
-        result = remoteFolders.data.files[0];
+    if(!force && remoteFolders.length > 0) {
+        console.log('Branding folder already exists!');
+        result = remoteFolders[0];
     } else {
-        console.log('creating remote folder');
-        const remoteFolder = await drive.files.create({
-            resource: {
-                name: 'Branding',
-                mimeType: 'application/vnd.google-apps.folder'
-            }
-        });
+        console.log('creating Branding folder');
+        result = await lib.createRemoteFolder('Branding');
 
-        result = remoteFolder.data;
-        console.log(result);
-
-        console.log('sharing new folder with contact@gcbrains.com');
-        const permission = await drive.permissions.create({
-            fileId: result.id,
-            requestBody: {
-                role: 'reader',
-                type: 'group',
-                emailAddress: 'contact@gcbrains.com'
-            }
-        });
-        console.log(permission.data);
+        console.log('sharing Branding folder with contact@gcbrains.com');
+        await lib.grantPermission(result.id, 'contact@gcbrains.com');
     }
-
-    console.log('folder is;');
-    console.log(result);
 
     return result;
 }
 
 async function deleteFiles(remoteFolder) {
-    const {data} = await drive.files.list({
-        q: `'${remoteFolder.id}' in parents`
-    });
+    const remoteFiles = await lib.listRemoteFiles(remoteFolder.id);
 
-    for(const file of data.files) {
-        console.log(`deleting file: ${file.name}`);
-        console.log(file);
-
-        await drive.files.delete({ fileId: file.id });
+    for(const remoteFile of remoteFiles) {
+        console.log(`deleting remote file/folder: ${remoteFile.name}`);
+        await lib.deleteRemoteFile(remoteFile.id);
     }
 }
 
 async function upload(folderPath, remoteFolder) {
-    const fileNames = fs.readdirSync(folderPath);
-
-    fileNames
+    fs.readdirSync(folderPath)
         .filter(fileName => !fileName.startsWith('.'))
         .map(fileName => { return { fileName, filePath: path.join(folderPath, fileName) }; })
         .forEach(async ({ fileName, filePath }) => {
             const file = fs.statSync(filePath);
             if(file.isDirectory()) {
                 console.log(`create dir ${filePath}`);
-
-                const childRemoteFolder = await drive.files.create({
-                    resource: {
-                        name: fileName,
-                        mimeType: 'application/vnd.google-apps.folder',
-                        parents: [remoteFolder.id]
-                    }
-                });
-                console.log(childRemoteFolder.data);
-
-                await upload(filePath, childRemoteFolder.data);
+                const childRemoteFolder = await lib.createRemoteFolder(fileName, remoteFolder.id);
+                await upload(filePath, childRemoteFolder);
             } else {
                 console.log(`upload ${filePath}`);
-
-                const remoteFile = await drive.files.create({
-                    resource: {
-                        name: fileName,
-                        parents: [remoteFolder.id]
-                    },
-                    media: {
-                        body: fs.createReadStream(filePath),
-                    },
-                });
-
-                console.log('uploaded file');
-                console.log(remoteFile.data);
+                await lib.createRemoteFile(fileName, remoteFolder.id, fs.createReadStream(filePath));
             }
         });
 }

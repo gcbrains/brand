@@ -24,7 +24,7 @@ jobs:
           TOKEN: ${{secrets.GOOGLE_API_TOKEN}}
         run: |
           cd ./.scripts/
-          echo $TOKEN >> token.json
+          echo $TOKEN >> ./token.json
           npm install
-          npm run upload
-          rm -df token.json
+          GOOGLE_APPLICATION_CREDENTIALS=./token.json npm run upload
+          rm -f ./token.json
