@@ -1,10 +1,8 @@
 # Branding
 
-Contains resources and usage details about GC Brains brand.
+Contains resources and usage details about our brand.
 
-GC Brains branding is still in progress.
-
-What we've decided so far is;
+GC Brains branding is still a work in progress. What we've decided so far is;
 
 - Brand name;
   - ✅ Correct: GC Brains
