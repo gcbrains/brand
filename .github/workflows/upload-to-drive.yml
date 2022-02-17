@@ -9,8 +9,8 @@ on:
       - main
 
 jobs:
-  upload-to-drive:
-    if: contains( github.event.pull_request.labels.*.name, 'test-workflow')
+  publish:
+    if: contains( github.event.pull_request.labels.*.name, 'test') || github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout main
