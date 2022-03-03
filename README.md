@@ -17,8 +17,14 @@ Thinks we still consider;
 
 ## Social media profiles
 
-![](./assets/logo/logo-circle.png)
+Use square logo marks for social media profiles and let them crop it for you.
+
+![Logomark Primary Square](./assets/logo/logomark-primary-square.png)
+![Logomark Secondary Square](./assets/logo/logomark-secondary-square.png)
 
 ## Google workspace
 
-![](./assets/logo/logo-for-google-standard.png)
+Google wants 320x132, but distorts and shows 72x26 in gmail 🤯. So this logo is
+distorded on purpose so that gmail shows in right ratio 🤷.
+
+![](./assets/logo/google-workspace.png)
