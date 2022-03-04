@@ -25,6 +25,6 @@ Use square logo marks for social media profiles and let them crop it for you.
 ## Google workspace
 
 Google wants 320x132, but distorts and shows 72x26 in gmail 🤯. So this logo is
-distorded on purpose so that gmail shows in right ratio 🤷.
+distorded on purpose so that gmail shows in the right ratio 🤷.
 
 ![](./assets/logo/google-workspace.png)
