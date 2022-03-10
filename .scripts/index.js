@@ -27,12 +27,29 @@ async function createRemoteFolder(force = false) {
     return result;
 }
 
-async function deleteFiles(remoteFolder) {
+async function deleteFiles(basePath, remoteFolder, force = false) {
     const remoteFiles = await lib.listRemoteFiles(remoteFolder.id);
 
     for(const remoteFile of remoteFiles) {
-        console.log(`deleting remote file/folder: ${remoteFile.name}`);
-        await lib.deleteRemoteFile(remoteFile.id);
+        if(force) {
+            console.log(`deleting remote file/folder: ${remoteFile.name}`);
+            await lib.deleteRemoteFile(remoteFile.id);
+        } else {
+            const localPath = path.resolve(basePath, remoteFile.name);
+            if(lib.isRemoteFolder(remoteFile)) {
+                if(!fs.existsSync(localPath)) {
+                    console.log(`deleting remote folder: ${localPath}`);
+                    await lib.deleteRemoteFile(remoteFile.id);
+                } else {
+                    deleteFiles(remoteFile, false, localPath);
+                }
+            } else {
+                if(!fs.existsSync(path.resolve(basePath, remoteFile.name))) {
+                    console.log(`deleting remote file: ${remoteFile.name}`);
+                    await lib.deleteRemoteFile(remoteFile.id);
+                }
+            }
+        }
     }
 }
 
@@ -54,8 +71,12 @@ async function upload(folderPath, remoteFolder) {
 }
 
 async function main(args) {
-    const remoteFolder = await createRemoteFolder(args[2] === '--force-create-folder');
-    await deleteFiles(remoteFolder);
+    console.log(args);
+    const forceCreateFolder = args.some(arg => arg === '--force-create-folder');
+    const forceDeleteFiles = args.some(arg => arg === "--force-delete-files");
+
+    const remoteFolder = await createRemoteFolder(forceCreateFolder);
+    await deleteFiles('../assets', remoteFolder, forceDeleteFiles);
     await upload('../assets', remoteFolder);
 }
 
