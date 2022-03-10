@@ -57,11 +57,16 @@ async function grantPermission(fileId, emailAddress,
     return result.data;
 }
 
+function isRemoteFolder(file) {
+    return file.mimeType === MIME_TYPE_FOLDER;
+}
+
 module.exports = {
     findRemoteFolders,
     listRemoteFiles,
     createRemoteFolder,
     createRemoteFile,
     deleteRemoteFile,
-    grantPermission
+    grantPermission,
+    isRemoteFolder
 };
