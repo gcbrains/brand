@@ -9,7 +9,7 @@ GC Brains branding is still a work in progress. What we've decided so far is;
 - Brand name;
   - ✅ Correct: GC Brains
   - ⛔ Wrong: G C Brains, G&C Brains, gc brains, GC brains, GCBrains
-- Url friendly usage;
+- URL friendly usage;
   - ✅ Correct: gcbrains
   - ⛔ Wrong: gc-brains, GC-Brains
 - Logo is single color, never change it to another one
@@ -17,9 +17,10 @@ GC Brains branding is still a work in progress. What we've decided so far is;
 Thinks we still consider;
   - (oVo) might be used when logo cannot be used
 
-## Social media profiles
+## Profile Pictures
 
-Use square logo marks for social media profiles and let them crop it for you.
+Don't use regular logomark, use thumbnail logomarks in profile pictures and let
+it crop it for you.
 
 ![Logomark Primary Thumbnail](./assets/logo/png/medium-128px/logomark-primary-thumbnail-128h.png)
 ![Logomark Secondary Thumbnail](./assets/logo/png/medium-128px/logomark-secondary-thumbnail-128h.png)
