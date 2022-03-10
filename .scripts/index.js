@@ -14,7 +14,6 @@ async function createRemoteFolder(force = false) {
 
     let result;
     if(!force && remoteFolders.length > 0) {
-        console.log('Branding folder already exists!');
         result = remoteFolders[0];
     } else {
         console.log('creating Branding folder');
@@ -32,20 +31,20 @@ async function deleteFiles(basePath, remoteFolder, force = false) {
 
     for(const remoteFile of remoteFiles) {
         if(force) {
-            console.log(`deleting remote file/folder: ${remoteFile.name}`);
+            console.log(`delete remote file/folder: ${remoteFile.name}`);
             await lib.deleteRemoteFile(remoteFile.id);
         } else {
             const localPath = path.resolve(basePath, remoteFile.name);
             if(lib.isRemoteFolder(remoteFile)) {
                 if(!fs.existsSync(localPath)) {
-                    console.log(`deleting remote folder: ${localPath}`);
+                    console.log(`delete remote folder: ${localPath}`);
                     await lib.deleteRemoteFile(remoteFile.id);
                 } else {
-                    deleteFiles(remoteFile, false, localPath);
+                    await deleteFiles(localPath, remoteFile, false);
                 }
             } else {
                 if(!fs.existsSync(path.resolve(basePath, remoteFile.name))) {
-                    console.log(`deleting remote file: ${remoteFile.name}`);
+                    console.log(`delete remote file: ${remoteFile.name}`);
                     await lib.deleteRemoteFile(remoteFile.id);
                 }
             }
@@ -54,16 +53,24 @@ async function deleteFiles(basePath, remoteFolder, force = false) {
 }
 
 async function upload(folderPath, remoteFolder) {
+    const remoteFiles = (await lib.listRemoteFiles(remoteFolder.id))
+        .reduce((previous, current) => {
+            return { [current.name]: current, ...previous };
+        }, { });
+
     fs.readdirSync(folderPath)
         .filter(fileName => !fileName.startsWith('.'))
         .map(fileName => { return { fileName, filePath: path.join(folderPath, fileName) }; })
         .forEach(async ({ fileName, filePath }) => {
             const file = fs.statSync(filePath);
             if(file.isDirectory()) {
-                console.log(`create dir ${filePath}`);
-                const childRemoteFolder = await lib.createRemoteFolder(fileName, remoteFolder.id);
+                let childRemoteFolder = remoteFiles[fileName];
+                if(childRemoteFolder === undefined) {
+                    console.log(`create remote folder ${filePath}`);
+                    childRemoteFolder = await lib.createRemoteFolder(fileName, remoteFolder.id);
+                }
                 await upload(filePath, childRemoteFolder);
-            } else {
+            } else if(remoteFiles[fileName] === undefined) {
                 console.log(`upload ${filePath}`);
                 await lib.createRemoteFile(fileName, remoteFolder.id, fs.createReadStream(filePath));
             }
@@ -71,7 +78,6 @@ async function upload(folderPath, remoteFolder) {
 }
 
 async function main(args) {
-    console.log(args);
     const forceCreateFolder = args.some(arg => arg === '--force-create-folder');
     const forceDeleteFiles = args.some(arg => arg === "--force-delete-files");
 

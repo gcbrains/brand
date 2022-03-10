@@ -1,4 +1,4 @@
-name: upload to drive
+name: publish
 on:
   workflow_dispatch:
   pull_request:
@@ -10,7 +10,7 @@ on:
       - main
 
 jobs:
-  publish:
+  upload-to-drive:
     if: contains( github.event.pull_request.labels.*.name, 'test') || github.ref == 'refs/heads/main'
     runs-on: ubuntu-latest
     steps:
