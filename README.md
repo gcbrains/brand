@@ -4,7 +4,18 @@
 
 Contains resources and usage details about our brand.
 
-# Logo Construction
+## Brand name
+
+!! DRAFT !!
+- Brand name;
+  - ✅ Correct: GC Brains
+  - ⛔ Wrong: G C Brains, G&C Brains, gc brains, GC brains, GCBrains
+- URL friendly usage;
+  - ✅ Correct: gcbrains
+  - ⛔ Wrong: gc-brains, GC-Brains
+!! DRAFT !!
+
+## Logo Construction
 
 Logo consists of two parts, a logomark `(oVo)` and a wordmark `GC Brains` which
 are aligned either vertically or horizontally. Alternatively logomark can be
@@ -21,19 +32,11 @@ As a result there are 12 combinations as shown below;
 | __black__     | ![lm-b][] | ![l-b-h][]      | ![l-b-v][]    |
 | __white__     | ![lm-w][] | ![l-w-h][]      | ![l-w-v][]    |
 
-- Brand name;
-  - ✅ Correct: GC Brains
-  - ⛔ Wrong: G C Brains, G&C Brains, gc brains, GC brains, GCBrains
-- URL friendly usage;
-  - ✅ Correct: gcbrains
-  - ⛔ Wrong: gc-brains, GC-Brains
-- Logo is single color, never change it to another one
 
-Thinks we still consider;
-  - (oVo) might be used when logo cannot be used
-  - badge usage;
-    - ![primary-badge][]
-    - ![secondary-badge][]
+## Badges
+
+![primary-badge][]
+![secondary-badge][]
 
 ## Profile Pictures
 
