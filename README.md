@@ -6,10 +6,13 @@ Contains resources and usage details about our brand.
 
 # Logo Construction
 
-Logo consists of two parts, a logomark `(oVo)` and a wordmark `GC Brains`. Logo
-can be aligned either vertically or horizontally. Alternatively logomark can be
-used stand alone. There are four colorings. Primary, secondary, black and
-white. As a result there are 12 combinations as shown below;
+Logo consists of two parts, a logomark `(oVo)` and a wordmark `GC Brains` which
+are aligned either vertically or horizontally. Alternatively logomark can be
+used stand alone.
+
+There are four colorings: primary, secondary, black and white.
+
+As a result there are 12 combinations as shown below;
 
 |               | logomark  | logo-horizontal | logo-vertical |
 | ------------- | --------- | --------------- | ------------- |
