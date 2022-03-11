@@ -4,7 +4,27 @@
 
 Contains resources and usage details about our brand.
 
-GC Brains branding is still a work in progress. What we've decided so far is;
+# Logo Construction
+
+Logo consists of two parts, logomark `(oVo)`, and wordmark `GC Brains`.
+
+Logomark
+
+```
+(oVo)
+```
+
+Horizontal Logo
+
+`(oVo) GC Brains`
+
+Vertical LogoL
+
+```
+  (oVo)
+
+GC Brains
+```
 
 - Brand name;
   - ✅ Correct: GC Brains
