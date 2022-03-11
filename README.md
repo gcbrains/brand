@@ -8,23 +8,10 @@ Contains resources and usage details about our brand.
 
 Logo consists of two parts, logomark `(oVo)`, and wordmark `GC Brains`.
 
-Logomark
-
-```
-(oVo)
-```
-
-Horizontal Logo
-
-`(oVo) GC Brains`
-
-Vertical LogoL
-
-```
-  (oVo)
-
-GC Brains
-```
+| logomark | logo-horizontal   | logo-vertical |
+| -------- | ----------------- | ------------- |
+| `(oVo)`  | `(oVo) GC Brains` | `   (oVo)   ` |
+|          |                   | ` GC Brains ` |
 
 - Brand name;
   - ✅ Correct: GC Brains
