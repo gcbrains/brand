@@ -183,7 +183,7 @@ badges, whereas _black_ and _white_ badges can be used as status badges etc.
 | _white mark_           | ![lwm-badge][] |
 
 _black mark_ and _white mark_ badges may have any color on left and right side.
-Just make sure _mark_ is visible with its background.
+Just make sure _mark_ is visible on its background.
 
 [publish-badge]: https://github.com/gcbrains/branding/actions/workflows/publish.yml/badge.svg
 
