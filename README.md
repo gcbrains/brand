@@ -54,6 +54,10 @@ As a result there are 12 combinations as shown below;
 | __black__     | ![lm-b][] | ![l-b-h][]      | ![l-b-v][]    |
 | __white__     | ![lm-w][] | ![l-w-h][]      | ![l-w-v][]    |
 
+### Logomark usage in plain text
+
+When logo is needed in a place where image cannot be included, you may use
+`(oVo)` or `(oVo) GC Brains`.
 
 ## Badges
 
