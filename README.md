@@ -1,8 +1,8 @@
-# Branding
+# GC Brains Brand
 
 [![publish-badge][]](https://github.com/gcbrains/branding/actions/workflows/publish.yml)
 
-Contains resources and usage details about our brand.
+This repository contains all resources and usage details about GC Brains brand.
 
 ## Brand name
 
