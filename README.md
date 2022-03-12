@@ -127,6 +127,18 @@ If existing exported files does not suit your need, you can use
 > that is less than `32px`, just don't use a logo at all. You may still use
 > text logo `(oVo)`
 
+## Watermarks
+
+Use watermarks to protect and copyright photos and videos online. Watermarks
+are exported to [assets/logo/svg/watermark](./assets/logo/svg/watermark) in
+`15%`, `22.5%` and `30%` opacities using only black/white colors in all
+layouts. E.g. `logo-black-horizontal-0.15.svg` is black horizontal logo in 15%
+opacity.
+
+> ⚠️  Don't use watermarks directly in html, because they are meant to be used
+> on existing photos or videos. There are also no `.png` exports available,
+> because of the same reason.
+
 ## Exceptions
 
 There are some exceptions to make logo look clean and not distorted. Each
