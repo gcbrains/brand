@@ -22,22 +22,28 @@ see correct and wrong usages within some certain contexts.
 
 ### Usernames, URLs, Paths and File Names
 
-| ✅ Correct | ⛔ Wrong   |
-| ---------- | ---------- |
-| gcbrains   | gc-brains  |
-|            | GC-Brains  |
-|            | gc_brains  |
-|            | GCBrains   |
+| ✅ Correct | ⛔ Wrong    |
+| ---------- | ----------- |
+| `gcbrains` | `gc-brains` |
+|            | `GC-Brains` |
+|            | `gc_brains` |
+|            | `GCBrains`  |
 
 ### Coding
 
-| Type | Usage |
-| ---- | ----- |
-| camelCase  | gcBrains  |
-| PascalCase | GCBrains  |
-|            | GcBrains  |
-| kebab-case | gc-brains |
-| snake_case | gc_brains |
+| Type         | ✅ Correct | ⛔ Wrong    |
+| ------------ | ---------- | ----------- |
+| `camelCase`  | `gcbrains` | `gcBrains`  |
+| `PascalCase` | `Gcbrains` | `GcBrains`  |
+| `kebab-case` | `gcbrains` | `gc-brains` |
+| `snake_case` | `gcbrains` | `gc_brains` |
+| `UPPER_CASE` | `GCBRAINS` | `GC_BRAINS` |
+
+> We are aware of the fact that there is an inconsistency here. `GC Brains`
+> should've been `gcBrains` when it is `camelCase`, right? This is intentional
+> because first of all our domain name is `gcbrains.com`. And it is pretty
+> simple to keep all other usages to follow `gcbrains`. So other than plain
+> text, stick to this simpler representation.
 
 ## Logo Construction
 
