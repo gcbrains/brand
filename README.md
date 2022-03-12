@@ -11,23 +11,15 @@ see correct and wrong usages within some certain contexts.
 
 ### In Plain text
 
-| ✅ Correct | ⛔ Wrong   |
-| ---------- | ---------- |
-| GC Brains  | G C Brains |
-|            | G&C Brains |
-|            | gc brains  |
-|            | GC brains  |
-|            | GCBrains   |
-|            | gcbrains   |
+| ✅ Correct | ⛔ Wrong                         |
+| ---------- | -------------------------------- |
+| GC Brains  | G C Brains, G&C Brains, GCBrains |
 
 ### Usernames, URLs, Paths and File Names
 
-| ✅ Correct | ⛔ Wrong    |
-| ---------- | ----------- |
-| `gcbrains` | `gc-brains` |
-|            | `GC-Brains` |
-|            | `gc_brains` |
-|            | `GCBrains`  |
+| ✅ Correct | ⛔ Wrong                 |
+| ---------- | ------------------------ |
+| `gcbrains` | `gc-brains`, `gc_brains` |
 
 ### Coding
 
