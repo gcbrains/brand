@@ -74,7 +74,7 @@ and look nice. Below is a list of suggestions to achive this;
   backgrounds
   - Except that when you use _mark_, _primary_ might fit dark backgrounds as
     well.
-- Layout preference is _horizontal_, then _vertical_. If none fits well use
+- Layout preference is _horizontal_, then _vertical_. If none fits well, use
   _mark_.
 
 Below are some examples;
@@ -86,13 +86,14 @@ Below are some examples;
 
 ### Finding a logo
 
-This repository has a `./assets/logo` folder where you can find all of existing
-exports. All of these exported files are valid and can be used where they fit.
-Use `.svg` files where possible, if not, use `.png` files with a suitable size.
+[](./assets/logo) folder includes all of the existing exported files. All of
+these exported files are valid and can be used where they fit.  Use `.svg`
+files where possible, if not, use `.png` files with a suitable size.
 
-#### `.svg` files
+#### SVG files
 
-`.svg` files are in `./assets/logo/svg` folder.
+`.svg` files are in [](./assets/logo/svg) folder. Below is the naming
+convention for svg files;
 
 ```
 logo-primary-horizontal.svg
@@ -100,13 +101,15 @@ logo-primary-horizontal.svg
 logo-[color]-[layout].svg
 ```
 
-#### `.png` files
+#### PNG files
 
-`.png` files are in `./assets/logo/png` folder. There are three folders
+`.png` files are in [](./assets/logo/png) folder. There are three folders
 indicating different sizes named `small-32px`, `medium-128px` and
 `large-512px`.
 
 > Size represents the size of `mark` in a logo, not the image size.
+
+Below is the naming convention for png files;
 
 ```
 logo-secondary-vertical-96w.png
@@ -118,17 +121,21 @@ logo-[color]-[layout]-[width or height].png
 ### Exporting a new logo
 
 If existing exported files does not suit your need, you can use
-[brandkit.fig](./brandkit.fig) file to export a new one.
+[](./brandkit.fig) file to export a new one.
 
-> ⚠️  Mark cannot be smaller than `32px`. If your space requires a mark that is
-> less than `32px`, just don't use a logo at all. You may still use text logo
-> `(oVo)`
+> ⚠️  `mark` files cannot be smaller than `32px`. If your space requires a mark
+> that is less than `32px`, just don't use a logo at all. You may still use
+> text logo `(oVo)`
 
 ## Exceptions
 
 There are some exceptions to make logo look clean and not distorted. Each
 exception has its own specific usage, so use these exports __only__ where they
 are exported for.
+
+Files are in [](./assets/logo/exceptions). Exception names are placed as
+`layout` part in file names. E.g. `logo-primary-thumbnail.svg` is thumbnail
+exception in primary color.
 
 ### Profile Pictures
 
