@@ -168,8 +168,6 @@ distorded on purpose so that gmail shows in the right ratio 🤷.
 [lwm]: ./assets/logo/png/small-32px/logo-white-mark-32h.png
 [lwh]: ./assets/logo/png/small-32px/logo-white-horizontal-32h.png
 [lwv]: ./assets/logo/png/small-32px/logo-white-vertical-96w.png
-[lpt]: ./assets/logo/png/medium-32px/logo-primary-thumbnail-32h.png
-[lst]: ./assets/logo/png/medium-32px/logo-secondary-thumbnail-32h.png
 [lpt]: ./assets/logo/exceptions/profile-pictures/logo-primary-thumbnail-32h.png
 [lst]: ./assets/logo/exceptions/profile-pictures/logo-secondary-thumbnail-32h.png
 
