@@ -6,14 +6,38 @@ Contains resources and usage details about our brand.
 
 ## Brand name
 
-!! DRAFT !!
-- Brand name;
-  - ✅ Correct: GC Brains
-  - ⛔ Wrong: G C Brains, G&C Brains, gc brains, GC brains, GCBrains
-- URL friendly usage;
-  - ✅ Correct: gcbrains
-  - ⛔ Wrong: gc-brains, GC-Brains
-!! DRAFT !!
+Brand name is `GC Brains` and our domain name is `gcbrains.com`. Below you can
+see correct and wrong usages within some certain contexts.
+
+### In Plain text
+
+| ✅ Correct | ⛔ Wrong   |
+| ---------- | ---------- |
+| GC Brains  | G C Brains |
+|            | G&C Brains |
+|            | gc brains  |
+|            | GC brains  |
+|            | GCBrains   |
+|            | gcbrains   |
+
+### Usernames, URLs, Paths and File Names
+
+| ✅ Correct | ⛔ Wrong   |
+| ---------- | ---------- |
+| gcbrains   | gc-brains  |
+|            | GC-Brains  |
+|            | gc_brains  |
+|            | GCBrains   |
+
+### Coding
+
+| Type | Usage |
+| ---- | ----- |
+| camelCase  | gcBrains  |
+| PascalCase | GCBrains  |
+|            | GcBrains  |
+| kebab-case | gc-brains |
+| snake_case | gc_brains |
 
 ## Logo Construction
 
