@@ -74,8 +74,7 @@ and look nice. Below is a list of suggestions to achive this;
   backgrounds
   - Except that when you use _mark_, _primary_ might fit dark backgrounds as
     well.
-- Try _horizontal_ first, then _vertical_ and finally _mark_, and use the one
-  that fits best.
+- Preference for layout is _horizontal_, _vertical_ and _mark_.
 
 Below are some examples;
 
