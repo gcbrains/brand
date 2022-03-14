@@ -33,7 +33,7 @@ see correct and wrong usages within some certain contexts.
 | `snake_case` | `gcbrains` | `gc_brains` |
 | `UPPER_CASE` | `GCBRAINS` | `GC_BRAINS` |
 
-> We are aware of the fact that there is an inconsistency here. `GC Brains`
+> ℹ️  We are aware of the fact that there is an inconsistency here. `GC Brains`
 > should've been `gcBrains` when it is `camelCase`, right? This is intentional
 > because first of all our domain name is `gcbrains.com`. And it is pretty
 > simple to keep all other usages to follow `gcbrains`. So other than plain
@@ -109,7 +109,7 @@ logo-[color]-[layout].svg
 three folders indicating different sizes named `small-32px`, `medium-128px` and
 `large-512px`.
 
-> Size represents the size of `mark` in a logo, not the image size.
+> ℹ️  Size represents the size of `mark` in a logo, not the image size.
 
 Below is the naming convention for png files;
 
@@ -127,15 +127,16 @@ If existing exported files does not suit your need, you can use
 
 > ⚠️  `mark` files cannot be smaller than `32px`. If your space requires a mark
 > that is less than `32px`, just don't use a logo at all. You may still use
-> text logo `(oVo)`
+> text mark `(oVo)`.
 
 ## Watermarks
 
 Use watermarks to protect and copyright photos and videos online. Watermarks
 are exported to [assets/logo/svg/watermark](./assets/logo/svg/watermark) in
 `15%`, `22.5%` and `30%` opacities using only black/white colors in all
-layouts. E.g. `logo-black-horizontal-0.15.svg` is black horizontal logo in 15%
-opacity.
+layouts.
+
+e.g. `logo-black-horizontal-0.15.svg` is black horizontal logo in 15% opacity.
 
 > ⚠️  Don't use watermarks directly in html, because they are meant to be used
 > on existing photos or videos. There are also no `.png` exports available,
@@ -148,8 +149,9 @@ exception has its own specific usage, so use these exports __only__ where they
 are exported for.
 
 Files are in [assets/logo/exceptions](./assets/logo/exceptions). Exception
-names are placed as `layout` part in file names. E.g.
-`logo-primary-thumbnail.svg` is thumbnail exception in primary color.
+names are placed as `layout` part in file names.
+
+e.g. `logo-primary-thumbnail.svg` is thumbnail exception in primary color.
 
 ### Profile Pictures
 
@@ -184,8 +186,8 @@ badges, whereas _black_ and _white_ badges can be used as status badges etc.
 | _black mark_           | ![lbm-badge][] |
 | _white mark_           | ![lwm-badge][] |
 
-_black mark_ and _white mark_ badges may have any color on left and right side.
-Just make sure _mark_ is visible on its background.
+> ℹ️  _black mark_ and _white mark_ badges may have any color on left and right
+> side.
 
 ## Colors
 
