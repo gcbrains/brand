@@ -187,8 +187,9 @@ Just make sure _mark_ is visible on its background.
 
 ## Colors
 
-Primary brand color is `#F9465B` and we use black `#000000` and white `#FFFFFF`
-to create contrast. Below you can find suggested color usage weights;
+Primary brand color is ![](https://via.placeholder.com/20/F9465B/000000?text=+)
+`#F9465B` and we use black `#000000` and white `#FFFFFF` to create contrast.
+Below you can find suggested color usage weights;
 
 | Color     | Distribution % |
 | --------- | -------------- |
@@ -198,20 +199,19 @@ to create contrast. Below you can find suggested color usage weights;
 
 Color shades are shown as below;
 
-| Opacity | Primary | Grayscale |
-| ------- | --------- | --------- |
-| 0%      | `#FFEDEF` | `#FFFFFF` |
-| 10%     | `#FFEDEF` | `#E6E6E6` |
-| 20%     | `#FEDADE` | `#CCCCCC` |
-| 30%     | `#FEC8CE` | `#B3B3B3` |
-| 40%     | `#FDB5BD` | `#999999` |
-| 50%     | `#FBA2AC` | `#7F7F7F` |
-| 60%     | `#FB909D` | `#666666` |
-| 70%     | `#FB7E8D` | `#4D4D4D` |
-| 80%     | `#FA6B7C` | `#333333` |
-| 90%     | `#FA596C` | `#1A1A1A` |
-| 100%    | `#FA465B` | `#000000` |
-
+| Opacity | Primary                                                            | Grayscale                                                          |
+| ------- | ------------------------------------------------------------------ | ------------------------------------------------------------------ |
+| 0%      | ![](https://via.placeholder.com/15/FFEDEF/000000?text=+) `#FFFFFF` | ![](https://via.placeholder.com/15/FFFFFF/000000?text=+) `#FFFFFF` |
+| 10%     | ![](https://via.placeholder.com/15/FFEDEF/000000?text=+) `#FFEDEF` | ![](https://via.placeholder.com/15/E6E6E6/000000?text=+) `#E6E6E6` |
+| 20%     | ![](https://via.placeholder.com/15/FEDADE/000000?text=+) `#FEDADE` | ![](https://via.placeholder.com/15/CCCCCC/000000?text=+) `#CCCCCC` |
+| 30%     | ![](https://via.placeholder.com/15/FEC8CE/000000?text=+) `#FEC8CE` | ![](https://via.placeholder.com/15/B3B3B3/000000?text=+) `#B3B3B3` |
+| 40%     | ![](https://via.placeholder.com/15/FDB5BD/000000?text=+) `#FDB5BD` | ![](https://via.placeholder.com/15/999999/000000?text=+) `#999999` |
+| 50%     | ![](https://via.placeholder.com/15/FBA2AC/000000?text=+) `#FBA2AC` | ![](https://via.placeholder.com/15/7F7F7F/000000?text=+) `#7F7F7F` |
+| 60%     | ![](https://via.placeholder.com/15/FB909D/000000?text=+) `#FB909D` | ![](https://via.placeholder.com/15/666666/000000?text=+) `#666666` |
+| 70%     | ![](https://via.placeholder.com/15/FB7E8D/000000?text=+) `#FB7E8D` | ![](https://via.placeholder.com/15/4D4D4D/000000?text=+) `#4D4D4D` |
+| 80%     | ![](https://via.placeholder.com/15/FA6B7C/000000?text=+) `#FA6B7C` | ![](https://via.placeholder.com/15/333333/000000?text=+) `#333333` |
+| 90%     | ![](https://via.placeholder.com/15/FA596C/000000?text=+) `#FA596C` | ![](https://via.placeholder.com/15/1A1A1A/000000?text=+) `#1A1A1A` |
+| 100%    | ![](https://via.placeholder.com/15/FA465B/000000?text=+) `#FA465B` | ![](https://via.placeholder.com/15/000000/000000?text=+) `#000000` |
 
 [publish-badge]: https://github.com/gcbrains/branding/actions/workflows/publish.yml/badge.svg
 
