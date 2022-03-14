@@ -3,6 +3,8 @@
 [![publish-badge][]](https://github.com/gcbrains/branding/actions/workflows/publish.yml)
 
 This repository contains all resources and usage details about GC Brains brand.
+For the original brandkit you can download [brandkit.fig](./brandkit.fig) or
+[brandkit.pdf](./brandkit.pdf).
 
 ## Brand name
 
@@ -214,6 +216,12 @@ Color shades are shown as below;
 | 80%     | ![](https://via.placeholder.com/15/FA6B7C/000000?text=+) `#FA6B7C` | ![](https://via.placeholder.com/15/333333/000000?text=+) `#333333` |
 | 90%     | ![](https://via.placeholder.com/15/FA596C/000000?text=+) `#FA596C` | ![](https://via.placeholder.com/15/1A1A1A/000000?text=+) `#1A1A1A` |
 | 100%    | ![](https://via.placeholder.com/15/FA465B/000000?text=+) `#FA465B` | ![](https://via.placeholder.com/15/000000/000000?text=+) `#000000` |
+
+## Special Thanks 🙏
+
+This branding is created by [Behappy](https://github.com/behappystudio) team.
+Thanks a lot for your hard work and for your patience 🤗.
+
 
 [publish-badge]: https://github.com/gcbrains/branding/actions/workflows/publish.yml/badge.svg
 
