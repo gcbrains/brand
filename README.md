@@ -198,10 +198,19 @@ to create contrast. Below you can find suggested color usage weights;
 
 Color shades are shown as below;
 
-| 0%        | 10%       | 20%       | 30%       | 40%       | 50%       | 60%       | 70%       | 80%       | 90%       | 100%      |
-| --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
-| `#FFFFFF` | `#FFEDEF` | `#FEDADE` | `#FEC8CE` | `#FDB5BD` | `#FBA2AC` | `#FB909D` | `#FB7E8D` | `#FA6B7C` | `#FA596C` | `#FA465B` |
-| `#FFFFFF` | `#E6E6E6` | `#CCCCCC` | `#B3B3B3` | `#999999` | `#7F7F7F` | `#666666` | `#4D4D4D` | `#333333` | `#1A1A1A` | `#000000` |
+| Opacity | Primary | Grayscale |
+| ------- | --------- | --------- |
+| 0%      | `#FFEDEF` | `#FFFFFF` |
+| 10%     | `#FFEDEF` | `#E6E6E6` |
+| 20%     | `#FEDADE` | `#CCCCCC` |
+| 30%     | `#FEC8CE` | `#B3B3B3` |
+| 40%     | `#FDB5BD` | `#999999` |
+| 50%     | `#FBA2AC` | `#7F7F7F` |
+| 60%     | `#FB909D` | `#666666` |
+| 70%     | `#FB7E8D` | `#4D4D4D` |
+| 80%     | `#FA6B7C` | `#333333` |
+| 90%     | `#FA596C` | `#1A1A1A` |
+| 100%    | `#FA465B` | `#000000` |
 
 
 [publish-badge]: https://github.com/gcbrains/branding/actions/workflows/publish.yml/badge.svg
