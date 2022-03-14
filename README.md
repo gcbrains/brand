@@ -185,6 +185,25 @@ badges, whereas _black_ and _white_ badges can be used as status badges etc.
 _black mark_ and _white mark_ badges may have any color on left and right side.
 Just make sure _mark_ is visible on its background.
 
+## Colors
+
+Primary brand color is `#F9465B` and we use black `#000000` and white `#FFFFFF`
+to create contrast. Below you can find suggested color usage weights;
+
+| Color     | Distribution % |
+| --------- | -------------- |
+| `#F9465B` | 40%            |
+| `#000000` | 30%            |
+| `#FFFFFF` | 30%            |
+
+Color shades are shown as below;
+
+| 0%        | 10%       | 20%       | 30%       | 40%       | 50%       | 60%       | 70%       | 80%       | 90%       | 100%      |
+| --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- |
+| `#FFFFFF` | `#FFEDEF` | `#FEDADE` | `#FEC8CE` | `#FDB5BD` | `#FBA2AC` | `#FB909D` | `#FB7E8D` | `#FA6B7C` | `#FA596C` | `#FA465B` |
+| `#FFFFFF` | `#E6E6E6` | `#CCCCCC` | `#B3B3B3` | `#999999` | `#7F7F7F` | `#666666` | `#4D4D4D` | `#333333` | `#1A1A1A` | `#000000` |
+
+
 [publish-badge]: https://github.com/gcbrains/branding/actions/workflows/publish.yml/badge.svg
 
 [lpm]: ./assets/logo/png/small-32px/logo-primary-mark-32h.png
