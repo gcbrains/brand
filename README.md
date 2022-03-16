@@ -163,11 +163,11 @@ them crop it for you.
 
 ### Google Workspace
 
-Google wants 320x132, but distorts and shows 72x26 in gmail 🤯. So this logo is
-distorded on purpose so that gmail shows in the right ratio 🤷.
+Google workspace shows 78x32, so this logo has 32x32 mark within 78x32
+transparent background.
 
 <img
-  src="./assets/logo/exceptions/google-workspace/logo-secondary-gmail.png"
+  src="./assets/logo/exceptions/google-workspace/logo-primary-google.png"
   height="32"
 />
 
