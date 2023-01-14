@@ -69,7 +69,7 @@ make it easy.
 
 First of all, every alternative is valid and can be used. There is no
 restriction. However, if you use a logo this means you want it to be noticed
-and look nice. Below is a list of suggestions to achive this;
+and look nice. Below is a list of suggestions to achieve this;
 
 - Prefer _primary_ & _secondary_ logos over _black_ & _white_ wherever possible
 - Use _primary_ & _black_ for light backgrounds, _secondary_ & _white_ for dark
