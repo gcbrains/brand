@@ -195,7 +195,7 @@ Primary brand color is ![](https://via.placeholder.com/20/F9465B/000000?text=+)
 `#F9465B` and we use black
 ![](https://via.placeholder.com/20/000000/000000?text=+) `#000000` and white
 ![](https://via.placeholder.com/20/FFFFFF/000000?text=+) `#FFFFFF` to create
-contrast.  Below you can find suggested color usage weights;
+contrast. Below you can find suggested color usage weights;
 
 | Color                                                              | Distribution % |
 | ------------------------------------------------------------------ | -------------- |
