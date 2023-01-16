@@ -173,9 +173,9 @@ transparent background.
 
 ## Badges
 
-Right now, there are no apparent use cases for badges, but they are prepared
-anyway. _primary_ and _secondary_ badges are more suitable for brand related
-badges, whereas _black_ and _white_ badges can be used as status badges etc.
+There are no apparent use cases for badges, but they are prepared anyway.
+_primary_ and _secondary_ badges are more suitable for brand related badges,
+whereas _black_ and _white_ badges can be used as status badges etc.
 
 | Type                   | Badge          |
 | ---------------------- | -------------- |
