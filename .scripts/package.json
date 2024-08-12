@@ -5,6 +5,6 @@
     "upload": "node ."
   },
   "dependencies": {
-    "googleapis": "^95.0.0"
+    "googleapis": "^140.0.1"
   }
 }
